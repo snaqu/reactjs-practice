@@ -6,9 +6,13 @@ class App extends React.Component {
 
     // po kliknięciu zmienia w state wartosc aktywnosci
     handleShowMessage = () => {
-        this.setState({
-            value: !this.state.value
-        })
+        // debugger - wpisuje i zatrzymuje mi działanie kodu w tym momencie
+        // w przeglądarce moge zobaczyć co nie działa
+
+        // przekazywac przez funckje gdy odnosze się do aktualnego stanu
+        this.setState((prevState) => ({
+            value: !prevState.value
+        }))
     }
 
     render() {
