@@ -69,7 +69,6 @@ const MathButton = (props) => {
     )
 }
 const ResultPanel = (props) => {
-
     return (
         <React.Fragment>
             <h1>Liczba kliknięć: {props.count} {props.count > 10 ? <span> uwaga wybuchnie!</span> : null}</h1>
