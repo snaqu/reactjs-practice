@@ -9,12 +9,31 @@
 
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+        body{
+            font-size: 1.3rem;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        button{
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        background-color: #fff;
+        border: 2px solid black;
+        margin: 10px 20px;
+        outline: none;
+        cursor: pointer;
+    }
+    button:disabled{
+        border: 2px solid gray;
+        opacity: 0.3;
+    }
+    </style>
 </head>
 
 <body>
     <div id="root"></div>
     <!-- Żeby zobaczyć kazdy projekt należy zmienić nazwę do skryptu -->
-    <script type="text/babel" src="checkBox.js"></script>
+    <script type="text/babel" src="miniCheckout.js"></script>
 </body>
 
 </html>
