@@ -26,6 +26,7 @@ class MiniCheckout extends React.Component {
         const { amount, availableAmout } = this.state;
         return (
             <div>
+                <span>Na stanie: {availableAmout}</span> <br />
                 <button
                     onClick={() => this.handleChangeAmount("minus")}
                     disabled={amount === 0 ? true : false}
