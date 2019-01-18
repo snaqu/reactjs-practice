@@ -22,7 +22,7 @@ class App extends React.Component {
             })
             this.setState({
                 items: newArr,
-                totalPrice: this.state.totalPrice + newPrice
+                totalPrice: parseFloat(this.state.totalPrice.toFixed(2)) + newPrice
             })
         } else {
             const newArr = this.state.items.map(item => {
@@ -33,10 +33,11 @@ class App extends React.Component {
             })
             this.setState({
                 items: newArr,
-                totalPrice: this.state.totalPrice - newPrice
+                totalPrice: parseFloat(this.state.totalPrice.toFixed(2)) - newPrice
             })
         }
     }
+
     render() {
         return (
             <div>

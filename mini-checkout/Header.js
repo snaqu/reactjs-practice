@@ -1,13 +1,6 @@
 const Header = (props) => {
     const activeItems = props.items.filter(item => item.active);
-    let totalPrice = props.totalPrice;
-    // const totalPrice = props.items.reduce((acc, item) => {
-    //     if (item.active) {
-    //         acc + item.price;
-    //     }
-    //     return acc;
-    // }, 0);
-    // console.log(props.items);
+    let totalPrice = parseFloat(props.totalPrice.toFixed(2));
     return (
         <React.Fragment>
             <h1>Wielkość zamówienia: {activeItems.length}</h1>
