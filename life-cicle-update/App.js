@@ -10,7 +10,9 @@ class App extends React.Component {
         }))
     }
 
+    // wywoływane za każdym razem gdy zmieniony jest state.
     componentDidUpdate() {
+        console.log(`llll`);
         const { value, ratio } = this.state
         if (value >= 1000 && ratio === 2) {
             this.setState({
